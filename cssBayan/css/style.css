@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightskyblue;
+  width: 100vw;
+  height: 100vh;
+  padding: 1vh 1vw;
+}
+/* the first size of fonts (for mobile) below*/
+h1 {
+  font-size: 1.2rem;
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #7b0000;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.all-content {
+  margin: 0 auto;
+  width: 95vw;
+}
+
+.content-wrap {
+  margin: 0 auto; 
+}
+
+.elements-wrap {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+.h1-wrap {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border-bottom: 0.3vh solid grey;
+}
+
+.element {
+  margin: 0 auto;
+  border-bottom: 0.3vh solid grey;
+  width: 100%;
+}
+
+.head-of-element {
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  max-height: 0;
+  transition: max-height 2s, opacity 0.05s;
+  max-width: 60vw;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  margin-right: 1vw;
+  font-size: 0.5rem;
+  transition: 0.3s;
+}
+
+input:checked + label .image {
+  max-height: 100vh;
+}
+
+input:checked + label h2 {
+  color: black;
+}
+
+input:checked + label div .span-item {
+  transform: rotate(45deg);
+}
+/* the second sizes of fonts below */
+@media (min-width: 400px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .image {
+    max-width: 45vw;
+  }
+  span {
+    font-size: 0.8rem;
+  }
+
+  .elements-wrap {
+    width: 80vw;
+  }
+  .h1-wrap {
+    width: 80vw;
+  }
+}
+/* From this breakpoint (1020px) start to show hover-effects for desktop*/
+@media (min-width: 1020px) {
+  .image {
+    max-width: 25vw;
+  }
+  .elements-wrap, 
+  .h1-wrap {
+    width: 60vw;
+    margin-bottom: 1vh;
+  }
+  /* the third sizes of fonts below */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5vh;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+  }
+}
+
+@media (hover: hover) {
+  .image:active {
+    opacity: 0.2;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  
+  div.one:hover img {
+    max-height: 100vh;
+  }
+  
+  div.two:hover img {
+    max-height: 100vh;
+  }
+  
+  div.three:hover img {
+    max-height: 100vh;
+  }
+  
+  div.four:hover img {
+    max-height: 100vh;
+  }
+  
+  div.five:hover img {
+    max-height: 100vh;
+  }
+  
+  div.element:hover {
+    cursor: pointer;
+  }
+  
+  div.elements-wrap:hover h2 {
+    color: black;
+  }
+  
+  span {
+    margin-right: 1vw;
+    font-size: 0;
+  }
+
+  div.elements-wrap:hover span {
+    font-size: 1.2rem;
+  }
+  
+  label:hover span {
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 1220px) {
+  .elements-wrap,
+  .h1-wrap {
+    width: 30vw;
+  }
+  .image {
+    max-width: 16vw;
+  }
+}
