@@ -7,3 +7,71 @@
 body {
   background-color: lightskyblue;
 }
+
+h1 {
+  font-size: 1.2rem;
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #7b0000;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.all-content {
+  height: 100%;
+  width: 100%;
+}
+
+.content-wrap {
+  margin: 3vh auto; 
+}
+
+.elements-wrap {
+  width: 80vh;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+.h1-wrap {
+  width: 80vh;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+
+.element {
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+.head-of-element {
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  max-height: 0;
+  transition: max-height 2s;
+  max-width: 60vw;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  margin-right: 1vw;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+input:checked + label .image {
+  max-height: 100vh;
+}
