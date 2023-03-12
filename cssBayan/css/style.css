@@ -132,7 +132,7 @@ input:checked + label div .span-item {
   }
 }
 
-@media (hover) {
+@media (hover: hover) {
   label:hover {
     cursor: pointer;
   }
