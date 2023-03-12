@@ -75,3 +75,102 @@ span {
 input:checked + label .image {
   max-height: 100vh;
 }
+
+input:checked + label h2 {
+  color: black;
+}
+
+input:checked + label div .span-item {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .image {
+    max-width: 45vw;
+  }
+}
+
+@media (min-width: 1020px) {
+  .image {
+    max-width: 25vw;
+  }
+  .elements-wrap, 
+  .h1-wrap {
+    width: 60vw;
+    margin-bottom: 1vh;
+  }
+ 
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5vh;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+  
+  div.one:hover img {
+    max-height: 100vh;
+  }
+  
+  div.two:hover img {
+    max-height: 100vh;
+  }
+  
+  div.three:hover img {
+    max-height: 100vh;
+  }
+  
+  div.four:hover img {
+    max-height: 100vh;
+  }
+  
+  div.five:hover img {
+    max-height: 100vh;
+  }
+  
+  div.element:hover {
+    cursor: pointer;
+  }
+  
+  div.elements-wrap:hover h2 {
+    color: black;
+  }
+  
+  span {
+    margin-right: 1vw;
+    font-size: 0;
+  }
+
+  div.elements-wrap:hover span {
+    font-size: 1.2rem;
+  }
+  
+  label:hover span {
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 1220px) {
+  .elements-wrap,
+  .h1-wrap {
+    width: 30vw;
+  }
+  .image {
+    max-width: 16vw;
+  }
+}
