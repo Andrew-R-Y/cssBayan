@@ -8,6 +8,7 @@ body {
   background-color: lightskyblue;
   width: 100vw;
   height: 100vh;
+  padding: 1vh 1vw;
 }
 /* the first size of fonts (for mobile) below*/
 h1 {
@@ -26,6 +27,7 @@ h2 {
 
 .all-content {
   margin: 0 auto;
+  width: 95vw;
 }
 
 .content-wrap {
@@ -58,7 +60,7 @@ h2 {
   display: block;
   margin: 0 auto;
   max-height: 0;
-  transition: max-height 2s, opacity 0.2s;
+  transition: max-height 2s, opacity 0.05s;
   max-width: 60vw;
 }
 
