@@ -39,13 +39,13 @@ h2 {
 }
 .h1-wrap {
   width: 95vw;
-  margin: 0 auto;
-  border-bottom: 1px solid gray;
+  margin: 1vh auto 0;
+  border-bottom: 0.3vh solid grey;
 }
 
 .element {
   margin: 0 auto;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.3vh solid grey;
   width: 100%;
 }
 
@@ -69,8 +69,8 @@ h2 {
 
 span {
   margin-right: 1vw;
-  font-size: 0.8rem;
-  transition: 0.2s;
+  font-size: 0.5rem;
+  transition: 0.3s;
 }
 
 input:checked + label .image {
@@ -98,6 +98,10 @@ input:checked + label div .span-item {
   .image {
     max-width: 45vw;
   }
+  span {
+    font-size: 0.8rem;
+  }
+
   .elements-wrap {
     width: 80vw;
   }
