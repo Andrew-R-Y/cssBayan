@@ -33,13 +33,14 @@ h2 {
 }
 
 .elements-wrap {
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   background-color: lightblue;
 }
 .h1-wrap {
-  width: 95vw;
-  margin: 1vh auto 0;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2vh;
   border-bottom: 0.3vh solid grey;
 }
 
@@ -57,7 +58,7 @@ h2 {
   display: block;
   margin: 0 auto;
   max-height: 0;
-  transition: max-height 2s;
+  transition: all 2s;
   max-width: 60vw;
 }
 
@@ -129,7 +130,9 @@ input:checked + label div .span-item {
     margin-bottom: 0.5vh;
     margin-top: 0.5vh;
   }
+}
 
+@media (hover) {
   label:hover {
     cursor: pointer;
   }
